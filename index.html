@@ -5,334 +5,248 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CHANG JUI FANG - Full Stack Web Developer</title>
     <link rel="stylesheet" href="styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   </head>
   <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-      <div class="nav-container">
-        <div class="nav-logo">CJF</div>
-        <ul class="nav-menu">
-          <li><a href="#home" class="nav-link">Home</a></li>
-          <li><a href="#about" class="nav-link">About</a></li>
-          <li><a href="#experience" class="nav-link">Experience</a></li>
-          <li><a href="#skills" class="nav-link">Skills</a></li>
-          <li><a href="#education" class="nav-link">Education</a></li>
-          <li><a href="#certificates" class="nav-link">Certificates</a></li>
-          <li><a href="#contact" class="nav-link">Contact</a></li>
-        </ul>
-        <div class="hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-      <div class="hero-background">
-        <div class="geometric-shapes">
-          <div class="shape shape-1"></div>
-          <div class="shape shape-2"></div>
-          <div class="shape shape-3"></div>
-        </div>
-      </div>
-      <div class="hero-content">
-        <div class="profile-image-container">
-          <img
-            src="profile.jpg"
-            alt="CHANG JUI FANG"
-            class="profile-image"
-            id="profileImage"
-          />
-        </div>
-        <h1 class="hero-name">CHANG JUI FANG</h1>
-        <h2 class="hero-title">FULL STACK WEB DEVELOPER</h2>
-        <div class="hero-line"></div>
-        <p class="hero-subtitle">
-          Building intelligent systems with AI, APIs, and modern web
-          technologies
-        </p>
-        <div class="hero-buttons">
-          <a href="#contact" class="btn btn-primary">Get In Touch</a>
-          <a href="#experience" class="btn btn-secondary">View My Work</a>
-        </div>
-      </div>
-      <div class="scroll-indicator">
-        <i class="fas fa-chevron-down"></i>
-      </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="section about">
-      <div class="container">
-        <h2 class="section-title">PROFILE</h2>
-        <div class="title-underline"></div>
-        <div class="about-content">
-          <p class="about-text">
-            Motivated Computer Science student with hands-on experience in
-            AI-powered system development, LLM API integration, and backend
-            engineering. Skilled in Python, prompt engineering, and building
-            real-world applications that combine data, APIs, and user workflows.
-            Experienced in developing multi-role platforms and integrating
-            chat-based automation (LINE Bot + LLM). Seeking to contribute to AI
-            Agent-based smart manufacturing by applying strong analytical,
-            engineering, and system integration abilities.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience" class="section experience">
-      <div class="container">
-        <h2 class="section-title">WORK EXPERIENCE</h2>
-        <div class="title-underline"></div>
-        <div class="experience-item">
-          <div class="experience-header">
-            <h3 class="experience-company">CloudTribe</h3>
-            <span class="experience-role">Full-Stack Developer</span>
+    <main>
+      <!-- Sidebar -->
+      <aside class="sidebar" id="sidebar">
+        <div class="sidebar-info">
+          <div class="avatar-box">
+            <img src="profile.jpg" alt="CHANG JUI FANG" width="80" />
           </div>
-          <p class="experience-description">
-            Convenience-Based Transportation & Group-Buying Platform
-          </p>
-          <div class="tech-stack">
-            <span class="tech-tag">Next.js</span>
-            <span class="tech-tag">FastAPI</span>
-            <span class="tech-tag">PostgreSQL</span>
-            <span class="tech-tag">Google Maps API</span>
-            <span class="tech-tag">LINE Bot</span>
-            <span class="tech-tag">AWS</span>
+          <div class="info-content">
+            <h1 class="name">CHANG JUI FANG</h1>
+            <p class="title">Full Stack Web Developer</p>
           </div>
-          <div class="demo-video-container">
-            <a
-              href="https://youtu.be/6p1t8VfcdAA?si=_qpy1Y-xs9Pj55eY"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="demo-video-link"
-            >
-              <i class="fab fa-youtube"></i>
-              <span>Watch Demo Video</span>
-            </a>
-          </div>
-          <ul class="experience-list">
-            <li>
-              Developed backend features in Python + FastAPI, including
-              authentication, order creation, and driver/buyer workflows.
+          <button class="info_more-btn" aria-label="Show contacts" data-sidebar-btn>
+            <span>Show Contacts</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+        </div>
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box"><i class="fas fa-envelope"></i></div>
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
+                <a href="mailto:Ayethihan01@gmail.com" class="contact-link">Ayethihan01@gmail.com</a>
+              </div>
             </li>
-            <li>
-              Designed and integrated LINE Bot features using Python + LLM
-              prompts to automate instructions and provide user-friendly
-              interactions.
+            <li class="contact-item">
+              <div class="icon-box"><i class="fas fa-phone"></i></div>
+              <div class="contact-info">
+                <p class="contact-title">Phone</p>
+                <a href="tel:0906281930" class="contact-link">0906281930</a>
+              </div>
             </li>
-            <li>
-              Built REST APIs and connected them with a Next.js front-end to
-              support real-time updates and smooth user interactions.
+            <li class="contact-item">
+              <div class="icon-box"><i class="fab fa-github"></i></div>
+              <div class="contact-info">
+                <p class="contact-title">GitHub</p>
+                <a href="https://github.com/Cherry1177" target="_blank" rel="noopener noreferrer" class="contact-link">Cherry1177</a>
+              </div>
             </li>
-            <li>
-              Utilized Google Maps API to handle driver scheduling and
-              route-based workflows.
+          </ul>
+          <div class="separator"></div>
+          <ul class="social-list">
+            <li class="social-item">
+              <a href="https://github.com/Cherry1177" target="_blank" rel="noopener noreferrer" class="social-link"><i class="fab fa-github"></i></a>
             </li>
-            <li>
-              Managed data with PostgreSQL, optimizing queries and backend
-              logic.
-            </li>
-            <li>
-              Deployed on AWS EC2 + RDS, using Docker and Git for environment
-              consistency.
-            </li>
-            <li>
-              Collaborated with a small engineering team to debug, test, and
-              integrate new features across services.
+            <li class="social-item">
+              <a href="mailto:Ayethihan01@gmail.com" class="social-link"><i class="fas fa-envelope"></i></a>
             </li>
           </ul>
         </div>
-      </div>
-    </section>
+      </aside>
 
-    <!-- Skills Section -->
-    <section id="skills" class="section skills">
-      <div class="container">
-        <h2 class="section-title">SKILLS</h2>
-        <div class="title-underline"></div>
-        <div class="skills-grid">
-          <div class="skill-card">
-            <i class="fas fa-cloud skill-icon"></i>
-            <h3>Cloud Services</h3>
-            <p>AWS EC2, RDS</p>
+      <div class="main-content">
+        <!-- About -->
+        <article class="about active" data-article="about">
+          <h2 class="article-title">About me</h2>
+          <div class="about-text">
+            <p>
+              Motivated Computer Science student with hands-on experience in AI-powered system development, LLM API integration, and backend engineering. I enjoy turning complex problems into simple, robust solutions.
+            </p>
+            <p>
+              Skilled in Python, prompt engineering, and building real-world applications that combine data, APIs, and user workflows. Experienced in developing multi-role platforms and integrating chat-based automation (LINE Bot + LLM). Seeking to contribute to AI Agent-based smart manufacturing by applying strong analytical, engineering, and system integration abilities.
+            </p>
           </div>
-          <div class="skill-card">
-            <i class="fas fa-database skill-icon"></i>
-            <h3>Database</h3>
-            <p>PostgreSQL / SQL</p>
-          </div>
-          <div class="skill-card">
-            <i class="fab fa-github skill-icon"></i>
-            <h3>Version Control</h3>
-            <p>Git & GitHub</p>
-          </div>
-          <div class="skill-card">
-            <i class="fas fa-vial skill-icon"></i>
-            <h3>Testing</h3>
-            <p>Integration Testing</p>
-          </div>
-          <div class="skill-card">
-            <i class="fas fa-sitemap skill-icon"></i>
-            <h3>System Design</h3>
-            <p>API workflows, multi-service platforms</p>
-          </div>
-          <div class="skill-card">
-            <i class="fas fa-robot skill-icon"></i>
-            <h3>Python and WebScraping</h3>
-            <p>Game Developement and Logics</p>
-          </div>
-        </div>
-      </div>
-    </section>
+          <section class="service">
+            <h3 class="service-title">What I'm doing</h3>
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="service-icon-box"><i class="fas fa-cloud service-icon"></i></div>
+                <div class="service-content-box">
+                  <h4 class="service-item-title">Cloud & Backend</h4>
+                  <p class="service-item-text">Backend development with FastAPI, PostgreSQL, and deployment on AWS.</p>
+                </div>
+              </li>
+              <li class="service-item">
+                <div class="service-icon-box"><i class="fas fa-code service-icon"></i></div>
+                <div class="service-content-box">
+                  <h4 class="service-item-title">Web development</h4>
+                  <p class="service-item-text">Full-stack apps with Next.js, REST APIs, and modern front-end tools.</p>
+                </div>
+              </li>
+              <li class="service-item">
+                <div class="service-icon-box"><i class="fas fa-robot service-icon"></i></div>
+                <div class="service-content-box">
+                  <h4 class="service-item-title">AI & Automation</h4>
+                  <p class="service-item-text">LLM integration, LINE Bot, and prompt engineering for workflows.</p>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </article>
 
-    <!-- Education Section -->
-    <section id="education" class="section education">
-      <div class="container">
-        <h2 class="section-title">EDUCATION</h2>
-        <div class="title-underline"></div>
-        <div class="education-timeline">
-          <div class="education-item">
-            <div class="education-year">
-              2022-2026<br /><span class="expected">(expected)</span>
+        <!-- Resume -->
+        <article class="resume" data-article="resume">
+          <h2 class="article-title">Resume</h2>
+          <section class="timeline">
+            <div class="title-wrapper">
+              <h3 class="h3">Education</h3>
             </div>
-            <div class="education-content">
-              <h3>NATIONAL CHENGCHI UNIVERSITY</h3>
-              <p>Bachelor of Science (Computer Science)</p>
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="timeline-item-title">National Chengchi University</h4>
+                <span>2022 — 2026 (expected)</span>
+                <p class="timeline-text">Bachelor of Science (Computer Science)</p>
+              </li>
+              <li class="timeline-item">
+                <h4 class="timeline-item-title">National Management Degree College</h4>
+                <span>2017 — 2021</span>
+                <p class="timeline-text">English for Professional Purposes</p>
+              </li>
+            </ol>
+          </section>
+          <section class="timeline">
+            <div class="title-wrapper">
+              <h3 class="h3">Experience</h3>
             </div>
-          </div>
-          <div class="education-item">
-            <div class="education-year">2017-2021</div>
-            <div class="education-content">
-              <h3>NATIONAL MANAGEMENT DEGREE COLLEGE</h3>
-              <p>English for Professional Purposes</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="timeline-item-title">Full-Stack Developer — CloudTribe</h4>
+                <span>Convenience-Based Transportation & Group-Buying Platform</span>
+                <p class="timeline-text">
+                  Backend (Python + FastAPI), LINE Bot + LLM, Next.js front-end, PostgreSQL, Google Maps API, AWS EC2 + RDS. Collaborated with engineering team on features and integration.
+                </p>
+                <a href="https://youtu.be/6p1t8VfcdAA?si=_qpy1Y-xs9Pj55eY" target="_blank" rel="noopener noreferrer" class="demo-link"><i class="fab fa-youtube"></i> Watch Demo</a>
+              </li>
+            </ol>
+          </section>
+          <section class="skills-section">
+            <h3 class="skills-title">My skills</h3>
+            <ul class="skills-list">
+              <li class="skills-item">
+                <div class="skill">
+                  <div class="title-wrapper">
+                    <h4 class="h4">Backend & API</h4>
+                    <data value="85">85%</data>
+                  </div>
+                  <div class="skill-progress-bg"><div class="skill-progress-fill" style="width: 85%"></div></div>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="skill">
+                  <div class="title-wrapper">
+                    <h4 class="h4">Front-end</h4>
+                    <data value="75">75%</data>
+                  </div>
+                  <div class="skill-progress-bg"><div class="skill-progress-fill" style="width: 75%"></div></div>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="skill">
+                  <div class="title-wrapper">
+                    <h4 class="h4">Cloud & DevOps</h4>
+                    <data value="70">70%</data>
+                  </div>
+                  <div class="skill-progress-bg"><div class="skill-progress-fill" style="width: 70%"></div></div>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="skill">
+                  <div class="title-wrapper">
+                    <h4 class="h4">Python & LLM</h4>
+                    <data value="85">85%</data>
+                  </div>
+                  <div class="skill-progress-bg"><div class="skill-progress-fill" style="width: 85%"></div></div>
+                </div>
+              </li>
+            </ul>
+          </section>
+          <section class="certificates-inline">
+            <h3 class="h3">Certificates</h3>
+            <p class="timeline-text">CPE Programming (Intermediate) · Python Basic · TOEIC 990</p>
+          </section>
+        </article>
 
-    <!-- Certificates Section -->
-    <section id="certificates" class="section certificates">
-      <div class="container">
-        <h2 class="section-title">CERTIFICATES</h2>
-        <div class="title-underline"></div>
-        <div class="certificates-grid">
-          <div class="certificate-card">
-            <i class="fas fa-certificate certificate-icon"></i>
-            <h3>CPE Programming Certification</h3>
-            <p>CPE臺灣程式競賽暨檢定學會大學程式能力檢定 → 中級</p>
-            <span class="cert-level">Intermediate Level</span>
-          </div>
-          <div class="certificate-card">
-            <i class="fas fa-certificate certificate-icon"></i>
-            <h3>Python Basic</h3>
-            <p>Had a few game projects in the git repo, feel free to look around</p>
-            <span class="cert-level">Intermediate Level</span>
-          </div>
-          <div class="certificate-card">
-            <i class="fas fa-language certificate-icon"></i>
-            <h3>TOEIC</h3>
-            <p>Test of English for International Communication</p>
-            <span class="cert-score">Score: 990</span>
-          </div>
-        </div>
-      </div>
-    </section>
+        <!-- Portfolio -->
+        <article class="portfolio" data-article="portfolio">
+          <h2 class="article-title">Portfolio</h2>
+          <ul class="project-list">
+            <li class="project-item active">
+              <a href="https://github.com/Cherry1177/Rock_paper_scissor_game" target="_blank" rel="noopener noreferrer">
+                <figure class="project-img">
+                  <img src="https://raw.githubusercontent.com/Cherry1177/Rock_paper_scissor_game/main/background-image.jpg" alt="Rock Paper Scissors" />
+                </figure>
+                <h3 class="project-title">Rock Paper Scissors Game</h3>
+                <p class="project-category">HTML, CSS, JavaScript, Python, JSON</p>
+              </a>
+            </li>
+            <li class="project-item active">
+              <a href="https://github.com/Cherry1177/pokedex_react_native" target="_blank" rel="noopener noreferrer">
+                <figure class="project-img">
+                  <img src="pokedex-demo.png" alt="Pokedex React Native" onerror="this.src='https://placehold.co/600x340/6366f1/ffffff?text=Pokedex+App'" />
+                </figure>
+                <h3 class="project-title">Pokedex React Native</h3>
+                <p class="project-category">React Native, Expo, TypeScript, PokeAPI</p>
+              </a>
+            </li>
+            <li class="project-item active">
+              <a href="https://github.com/Cherry1177/pixel-calendar" target="_blank" rel="noopener noreferrer">
+                <figure class="project-img">
+                  <img src="https://placehold.co/600x340/8b5cf6/ffffff?text=Pixel+Calendar" alt="Pixel Calendar" />
+                </figure>
+                <h3 class="project-title">Pixel Calendar</h3>
+                <p class="project-category">HTML, CSS, JavaScript</p>
+              </a>
+            </li>
+          </ul>
+        </article>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section contact">
-      <div class="container">
-        <h2 class="section-title">CONTACT</h2>
-        <div class="title-underline"></div>
-        <div class="contact-content">
-          <div class="contact-info">
-            <div class="contact-item">
-              <i class="fas fa-phone contact-icon"></i>
-              <a href="tel:0906281930" class="contact-link">0906281930</a>
+        <!-- Contact -->
+        <article class="contact-article" data-article="contact">
+          <h2 class="article-title">Contact</h2>
+          <form class="contact-form" id="contactForm">
+            <div class="input-wrapper">
+              <input type="text" name="name" class="form-input" placeholder="Your Name" required />
+              <input type="email" name="email" class="form-input" placeholder="Your Email" required />
             </div>
-            <div class="contact-item">
-              <i class="fas fa-envelope contact-icon"></i>
-              <a href="mailto:Ayethihan01@gmail.com" class="contact-link"
-                >Ayethihan01@gmail.com</a
-              >
-            </div>
-            <div class="contact-item">
-              <i class="fab fa-github contact-icon"></i>
-              <a
-                href="https://github.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="contact-link"
-                >GitHub Profile</a
-              >
-            </div>
-          </div>
-          <div class="contact-form-container">
-            <form class="contact-form" id="contactForm">
-              <div class="form-group">
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  placeholder="Your Name"
-                  required
-                />
-              </div>
-              <div class="form-group">
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder="Your Email"
-                  required
-                />
-              </div>
-              <div class="form-group">
-                <textarea
-                  id="message"
-                  name="message"
-                  rows="5"
-                  placeholder="Your Message"
-                  required
-                ></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary">
-                Send Message
-              </button>
-            </form>
-          </div>
-        </div>
+            <textarea name="message" class="form-input" placeholder="Your Message" required rows="5"></textarea>
+            <button type="submit" class="form-btn">
+              <span>Send Message</span>
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+        </article>
       </div>
-    </section>
+    </main>
 
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="container">
-        <p>&copy; 2024 CHANG JUI FANG. All rights reserved.</p>
-        <div class="social-links">
-          <a
-            href="https://github.com/Cherry1177"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="social-link"
-          >
-            <i class="fab fa-github"></i>
-          </a>
-          <a href="mailto:Ayethihan01@gmail.com" class="social-link">
-            <i class="fas fa-envelope"></i>
-          </a>
-        </div>
-      </div>
-    </footer>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <ul class="navbar-list">
+        <li><button class="navbar-link active" data-nav-link="about">About</button></li>
+        <li><button class="navbar-link" data-nav-link="resume">Resume</button></li>
+        <li><button class="navbar-link" data-nav-link="portfolio">Portfolio</button></li>
+        <li><button class="navbar-link" data-nav-link="contact">Contact</button></li>
+      </ul>
+    </nav>
 
     <script src="script.js"></script>
   </body>
